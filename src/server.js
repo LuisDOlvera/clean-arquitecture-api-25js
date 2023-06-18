@@ -1,14 +1,17 @@
 const express = require("express");
 const app = express();
 
-//Routes
+//Routers
 const routerKoder = require("./routes/koder.route");
+const routerMentor = require("./routes/mentor.route");
 
-//Middlewares para toda nuestra API
+
+//Middlewares para toda nuestra API (Parceo)
 app.use(express.json());
 
 //Middlewares de rutas
 app.use("/koders", routerKoder);
+app.use("/mentors", routerMentor);
 
 /**
  * ---> Aqui se ponen todos los Middlewares (ejecución) 

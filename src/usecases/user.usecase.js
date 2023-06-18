@@ -26,5 +26,6 @@ const create = async (data) => {
     
 }
 
+
 module.exports = { create, login }
 

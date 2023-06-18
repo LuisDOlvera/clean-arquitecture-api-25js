@@ -5,7 +5,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         minlength: 3,
         maxlength: 20
-    },
+    }, 
     email: {
         type: String,
         match: /^.*@.*\..*$/, //regex -> patron
